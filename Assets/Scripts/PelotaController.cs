@@ -13,6 +13,9 @@ public class PelotaController : MonoBehaviour
     [SerializeField] AudioClip sfxWall;    // Sonido al chocar con una pared
     [SerializeField] AudioClip sfxFail;    // Sonido al salir por la pared inferior
 
+    GameObject pala;
+
+    bool halved = false;
 
     // Mantenemos un registro de los golpes con la pala.
     int contadorGolpes = 0;
@@ -25,6 +28,7 @@ public class PelotaController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        pala = GameObject.FindWithTag("Pala");
         Invoke("LanzarPelota", delay);
         sfx = GetComponent<AudioSource>();
 
@@ -51,6 +55,10 @@ public class PelotaController : MonoBehaviour
             // Actualizamos el contador de vidas
             gameManager.Updatelives();
 
+            if(halved) {
+                HalvePaddle(false);
+            }
+
             // Volvemos a lanzar la pelota
             Invoke("LanzarPelota", delay);
 
@@ -64,6 +72,10 @@ public class PelotaController : MonoBehaviour
     {
         // Almacenamos la etiqueta del objeto con el que estamos colisionando
         string tag = other.gameObject.tag;
+
+          if(!halved && tag == "ParedSuperior" ){
+            HalvePaddle(true);
+        }
 
         if (tag == "Pala")
         {   
@@ -102,9 +114,17 @@ public class PelotaController : MonoBehaviour
             sfx.clip = sfxWall;
             sfx.Play();
         }
+
+        
     }
 
-
+    public void HalvePaddle(bool reducir){
+        halved = reducir; 
+        Vector3 escalaActual = pala.transform.localScale;
+        pala.transform.localScale = reducir ? 
+            new Vector3(escalaActual.x * 0.5f, escalaActual.y, escalaActual.z):
+            new Vector3(escalaActual.x * 2f, escalaActual.y, escalaActual.z);
+}
 
 
     // Estructura donde almacenaremos las etiquetas y la puntuación de cada ladrillo

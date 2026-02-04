@@ -13,6 +13,8 @@ public class PelotaController1 : MonoBehaviour
     [SerializeField] AudioClip sfxBrick;
     [SerializeField] AudioClip sfxWall;
 
+    
+
   
     //Será serializable para poder acceder a través de Unity
     [SerializeField] float force;
