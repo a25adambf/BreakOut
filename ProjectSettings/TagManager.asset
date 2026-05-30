@@ -16,6 +16,8 @@ TagManager:
   - LadrilloCian
   - LadrilloAzul
   - LadrilloVioleta
+  - Brick-rock
+  - LadrilloAtravesable
   layers:
   - Default
   - TransparentFX

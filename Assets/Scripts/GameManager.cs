@@ -1,36 +1,39 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 
 public class GameManager : MonoBehaviour
 {
 
-    [SerializeField] int lives; 
-    [SerializeField] TextMeshProUGUI txtlives; 
-    // Variable para llevar el control de la puntuación
-    int score = 0;
-    
-    // Referencia al texto para mostrar la puntuación en la interfaz
-    [SerializeField] TextMeshProUGUI txtScore;
-    private void OnGUI()
-    {
-        // Actualizamos el texto de la puntuación
-        txtScore.text = string.Format("{0,3:D3}", score);  // Formateamos a 3 dígitos
+    public static int Score { get; private set; } = 0; 
+    public static int Lives { get; private set; } = 10;
 
-        txtlives.text = lives.ToString();
-    }
-        // Método para actualizar la puntuación
-    public void UpdateScore(int points)
-    {
-        score += points;
+    public static void UpdateScore(int points) { Score += points; }
 
-        
+    public static void UpdateLives() { Lives--; }
+
+    public static int[] totalBricks = new int[] {0, 49, 32};
+
+    public static void ResetGame()
+    {
+        Score = 0;
+        Lives = 10;
+        SceneManager.LoadScene(0);
     }
 
-        // Método para actualizar las vidas
-    public void Updatelives()
+    void Start()
     {
-        lives--;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
-    
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
+
 }

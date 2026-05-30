@@ -1,0 +1,1444 @@
+﻿<!DOCTYPE html>
+<html lang="es" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.126.3">
+    <meta name="generator" content="Relearn 8.0.0+9803d5122ebb3276acea823f476e9eb44f607862">
+    <meta name="description" content="El juego Breakout es un clásico juego de arcade lanzado por Atari en 1976. Fue diseñado por Nolan Bushnell y Steve Bristow, y fue conceptualmente similar a un juego anterior llamado “Pong”, también creado por Atari.
+En Breakout, el jugador controla una paleta que se mueve horizontalmente en la parte inferior de la pantalla. El objetivo es usar una pelota para romper una serie de ladrillos dispuestos en la parte superior de la pantalla.">
+    <meta name="author" content="IES San Clemente">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="/images/logo-ies.png">
+    <meta name="twitter:title" content="Breakout :: IES San Clemente - Programación multimedia y dispositivos móviles">
+    <meta name="twitter:description" content="El juego Breakout es un clásico juego de arcade lanzado por Atari en 1976. Fue diseñado por Nolan Bushnell y Steve Bristow, y fue conceptualmente similar a un juego anterior llamado “Pong”, también creado por Atari.
+En Breakout, el jugador controla una paleta que se mueve horizontalmente en la parte inferior de la pantalla. El objetivo es usar una pelota para romper una serie de ladrillos dispuestos en la parte superior de la pantalla.">
+    <meta property="og:url" content="/ud10/2.breakout/index.html">
+    <meta property="og:site_name" content="IES San Clemente - Programación multimedia y dispositivos móviles">
+    <meta property="og:title" content="Breakout :: IES San Clemente - Programación multimedia y dispositivos móviles">
+    <meta property="og:description" content="El juego Breakout es un clásico juego de arcade lanzado por Atari en 1976. Fue diseñado por Nolan Bushnell y Steve Bristow, y fue conceptualmente similar a un juego anterior llamado “Pong”, también creado por Atari.
+En Breakout, el jugador controla una paleta que se mueve horizontalmente en la parte inferior de la pantalla. El objetivo es usar una pelota para romper una serie de ladrillos dispuestos en la parte superior de la pantalla.">
+    <meta property="og:locale" content="es">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/images/logo-ies.png">
+    <meta itemprop="name" content="Breakout :: IES San Clemente - Programación multimedia y dispositivos móviles">
+    <meta itemprop="description" content="El juego Breakout es un clásico juego de arcade lanzado por Atari en 1976. Fue diseñado por Nolan Bushnell y Steve Bristow, y fue conceptualmente similar a un juego anterior llamado “Pong”, también creado por Atari.
+En Breakout, el jugador controla una paleta que se mueve horizontalmente en la parte inferior de la pantalla. El objetivo es usar una pelota para romper una serie de ladrillos dispuestos en la parte superior de la pantalla.">
+    <meta itemprop="dateModified" content="2026-02-04T12:18:22+00:00">
+    <meta itemprop="wordCount" content="162">
+    <meta itemprop="image" content="/images/logo-ies.png">
+    <title>Breakout :: IES San Clemente - Programación multimedia y dispositivos móviles</title>
+    <link href="../../ud10/2.breakout/index.html" rel="canonical" type="text/html" title="Breakout :: IES San Clemente - Programación multimedia y dispositivos móviles">
+    <link href="../../ud10/2.breakout/index.xml" rel="alternate" type="application/rss+xml" title="Breakout :: IES San Clemente - Programación multimedia y dispositivos móviles"><link rel="icon" href="../../images/android.bmp" type="image/bmp">
+    <link href="../../css/auto-complete/auto-complete.min.css?1770207589" rel="stylesheet">
+    <script src="../../js/auto-complete/auto-complete.min.js?1770207589" defer></script>
+    <script src="../../js/search-lunr.min.js?1770207589" defer></script>
+    <script src="../../js/search.min.js?1770207589" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="../../searchindex.es.js?1770207589";
+    </script>
+    <script src="../../js/lunr/lunr.min.js?1770207589" defer></script>
+    <script src="../../js/lunr/lunr.stemmer.support.min.js?1770207589" defer></script>
+    <script src="../../js/lunr/lunr.multi.min.js?1770207589" defer></script>
+    <script src="../../js/lunr/lunr.es.min.js?1770207589" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['es'];
+    </script>
+    <link href="../../fonts/fontawesome/css/fontawesome-all.min.css?1770207589" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="../../fonts/fontawesome/css/fontawesome-all.min.css?1770207589" rel="stylesheet"></noscript>
+    <link href="../../css/perfect-scrollbar/perfect-scrollbar.min.css?1770207589" rel="stylesheet">
+    <link href="../../css/theme.min.css?1770207589" rel="stylesheet">
+    <link href="../../css/format-print.min.css?1770207589" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/ud10\/2.breakout\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copiar en el portapapeles`;
+      window.T_Copied_to_clipboard = `¡Copiado al portapapeles!`;
+      window.T_Copy_link_to_clipboard = `Copiar enlace al portapapeles`;
+      window.T_Link_copied_to_clipboard = `¡Enlace copiado al portapapeles!`;
+      window.T_Reset_view = `Restablecer vista`;
+      window.T_View_reset = `¡Ver reajuste!`;
+      window.T_No_results_found = `No se han encontrado resultados para "{0}"`;
+      window.T_N_results_found = `{1} resultados encontrados para "{0}"`;
+      // variant stuff
+      window.relearn.themevariants = [ 'blue', 'relearn-light', 'relearn-dark', 'learn', 'neon', 'green', 'red' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script><style>
+    :root {
+    --MENU-WIDTH-S: 14.375rem;
+    --MENU-WIDTH-M: 14.375rem;
+    --MENU-WIDTH-L: 18.75rem;
+}
+
+@media screen and (max-width: 70.5rem) {
+    #R-sidebar {
+        min-width: var(--INTERNAL-MENU-WIDTH-S);
+        max-width: var(--INTERNAL-MENU-WIDTH-S);
+        width: var(--INTERNAL-MENU-WIDTH-S);
+    }
+    #R-body {
+        margin-inline-start: var(--INTERNAL-MENU-WIDTH-S);
+        min-width: calc( 100% - var(--INTERNAL-MENU-WIDTH-S) );
+        max-width: calc( 100% - var(--INTERNAL-MENU-WIDTH-S) );
+        width: calc( 100% - var(--INTERNAL-MENU-WIDTH-S) );
+    }
+}
+@media screen and (max-width: 70.5rem) {
+     
+
+    .mobile-support #R-sidebar {
+        inset-inline-start: calc( -1 * var(--INTERNAL-MENU-WIDTH-S) );
+        min-width: var(--INTERNAL-MENU-WIDTH-S);
+        max-width: var(--INTERNAL-MENU-WIDTH-S);
+        width: var(--INTERNAL-MENU-WIDTH-S);
+    }
+    .mobile-support #navshow{
+        display: inline;
+    }
+    .mobile-support #R-body {
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+    .mobile-support #R-body {
+        margin-inline-start: 0;
+    }
+    .mobile-support.sidebar-flyout {
+        overflow: hidden;
+    }
+    .mobile-support.sidebar-flyout #R-sidebar {
+        inset-inline-start: 0;
+        z-index: 90;
+    }
+    .mobile-support.sidebar-flyout #R-body {
+        margin-inline-start: var(--INTERNAL-MENU-WIDTH-S);
+        overflow: hidden;
+    }
+    .mobile-support.sidebar-flyout #R-body-overlay{
+        background-color: rgba( 134, 134, 134, .5 );
+        bottom: 0;
+        cursor: pointer;
+        height: 100vh;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 190;
+    }
+}
+
+</style>
+
+<script src="https://unpkg.com/kotlin-playground@1" data-selector=".kotlin-code"></script>
+
+  </head>
+  <body class="mobile-support print" data-url="../../ud10/2.breakout/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menú (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Tabla de contenido (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="../../index.html"><span itemprop="name">Programación multimedia e dispositivos móbiles.</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="../../ud10/index.html"><span itemprop="name">UD10. Xogos 2D</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Breakout</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-print" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../ud10/2.breakout/index.print.html" title="Imprimir todo el capítulo (CTRL+ALT+p)"><i class="fa-fw fas fa-print"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../ud10/1.pong/7.ejecutable/index.html" title="Ejecutable (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="../../ud10/2.breakout/1.proyecto/index.html" title="Proyecto (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Más"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable ud10" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="breakout">Breakout</h1>
+
+<p>El juego Breakout es un clásico juego de arcade lanzado por Atari en 1976. Fue diseñado por Nolan Bushnell y Steve Bristow, y fue conceptualmente similar a un juego anterior llamado &ldquo;Pong&rdquo;, también creado por Atari.</p>
+<p>En Breakout, el jugador controla una paleta que se mueve horizontalmente en la parte inferior de la pantalla. El objetivo es usar una pelota para romper una serie de ladrillos dispuestos en la parte superior de la pantalla. Cada vez que la pelota golpea un ladrillo, éste se destruye y el jugador gana puntos. El juego continúa hasta que todos los ladrillos hayan sido eliminados o la pelota caiga fuera de la zona de juego.</p>
+<p>Breakout es conocido por su jugabilidad simple pero adictiva, así como por su diseño visual distintivo. Ha sido adaptado y recreado en numerosas plataformas y sigue siendo popular entre los entusiastas de los videojuegos retro. Además, ha inspirado una serie de juegos similares y variaciones a lo largo de los años.</p>
+
+  <footer class="footline"></article>
+<footer>
+   <i class='fas fa-user'></i>  <span itemprop="name"> Autor/a: Sabela Sobrino</span>
+
+<i class='fas fa-calendar'></i> Última actualización: 04.02.2026 
+</footer>
+  </footer>
+</article>
+          <section>
+            <h1 class="a11y-only">Subsecciones de Breakout</h1>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="proyecto">Proyecto</h1>
+
+<p>Para comenzar nuestro proyecto en Unity Hub, seleccionaremos la plantilla &ldquo;2D Core&rdquo; y le daremos el nombre &ldquo;UD08_3_Breakout&rdquo;, además de elegir la ubicación donde deseamos almacenarlo.</p>
+<p><a href="#R-image-776cc2318d81d307df520edb9c504c77" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/1.proyecto/newproject.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-776cc2318d81d307df520edb9c504c77"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/1.proyecto/newproject.png"></a></p>
+<p>Una vez que el proyecto esté en marcha, ajustaremos las distintas pantallas según nuestras preferencias. Dado que este proyecto se ejecutará en vertical, cambiaremos el formato del proyecto creando uno nuevo con una relación de aspecto de 3:4.</p>
+<p><a href="#R-image-ba629bae3113611e52176a056e73f9d1" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/1.proyecto/resolution.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ba629bae3113611e52176a056e73f9d1"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/1.proyecto/resolution.png"></a></p>
+<p>Podemos guardar esta disposición del juego utilizando la función &ldquo;save layout&rdquo;:</p>
+<p><a href="#R-image-a8f745136355c00008cf6667d568eeb7" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/1.proyecto/save.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a8f745136355c00008cf6667d568eeb7"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/1.proyecto/save.png"></a></p>
+
+  <footer class="footline"></article>
+<footer>
+   <i class='fas fa-user'></i>  <span itemprop="name"> Autor/a: Sabela Sobrino</span>
+
+<i class='fas fa-calendar'></i> Última actualización: 04.02.2026 
+</footer>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="zona-de-juego">Zona de Juego</h1>
+
+<ol>
+<li>Renombrar la escena como &ldquo;Scene-01&rdquo;:</li>
+</ol>
+<p><a href="#R-image-e541cc3488f7e18336a9e06b4cbd7241" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/2.zonajuego/scene.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e541cc3488f7e18336a9e06b4cbd7241"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/2.zonajuego/scene.png"></a></p>
+<ol start="2">
+<li>Crear la zona de juego:</li>
+</ol>
+<p>Comenzaremos generando los bordes verticales. Ajustaremos su tamaño y posición, y les daremos el nombre &ldquo;wall-r&rdquo;, añadiendo un box collider 2D:</p>
+<p><a href="#R-image-a99537d3237f7bc985d6937b1371821b" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/2.zonajuego/wallr.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a99537d3237f7bc985d6937b1371821b"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/2.zonajuego/wallr.png"></a></p>
+<p>A partir de esta pared, duplicaremos para generar la pared izquierda, cambiando simplemente el signo de la posición X:</p>
+<p><a href="#R-image-102960d59f14fd9cdf1caa336e10a4ba" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/2.zonajuego/walll.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-102960d59f14fd9cdf1caa336e10a4ba"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/2.zonajuego/walll.png"></a></p>
+<p>Utilizaremos estas paredes para generar la pared superior, ajustando las dimensiones y la posición:</p>
+<p><a href="#R-image-66aad3234442e441320a9bf42c6a09c5" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/2.zonajuego/wallt.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-66aad3234442e441320a9bf42c6a09c5"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/2.zonajuego/wallt.png"></a></p>
+<p>Por último, desde la pared superior generaremos la pared inferior cambiando el signo de la posición en Y. Sin embargo, en este caso no queremos que se muestre, por lo que deshabilitaremos la opción de Sprite Renderer. También marcaremos el isTrigger del boxCollider, ya que en esta pared no rebotará, sino que la atravesará:</p>
+<p><a href="#R-image-49c9ff187c7d77e2e38bf64e1d4c7b58" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/2.zonajuego/wallb.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-49c9ff187c7d77e2e38bf64e1d4c7b58"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/2.zonajuego/wallb.png"></a></p>
+<p>Crearemos un nuevo objeto vacío llamado &ldquo;GameZone&rdquo; donde agruparemos todos los objetos de pared:</p>
+<p><a href="#R-image-d5f26dc612d657b75c2ab72bc151a06b" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/2.zonajuego/gamezona.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d5f26dc612d657b75c2ab72bc151a06b"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/2.zonajuego/gamezona.png"></a></p>
+<ol start="3">
+<li>Cambiar el fondo:</li>
+</ol>
+<p>Modificaremos el fondo de nuestro juego a negro. Para ello, seleccionaremos la cámara y estableceremos el color negro:</p>
+<p><a href="#R-image-b81502c8f88ac7dba9aec4e7deae39f5" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/2.zonajuego/fondo.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b81502c8f88ac7dba9aec4e7deae39f5"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/2.zonajuego/fondo.png"></a></p>
+
+  <footer class="footline"></article>
+<footer>
+   <i class='fas fa-user'></i>  <span itemprop="name"> Autor/a: Sabela Sobrino</span>
+
+<i class='fas fa-calendar'></i> Última actualización: 04.02.2026 
+</footer>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="pala">Pala</h1>
+
+<h2 id="añadir-componente">Añadir componente</h2>
+<p>Vamos a incorporar un nuevo cuadrado a nuestra zona de juego para representar la pala. Ajustaremos su tamaño, posición y color a azul:</p>
+<p><a href="#R-image-4909b8f223e380bbc5219a79005d10de" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/3.pala/pala.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4909b8f223e380bbc5219a79005d10de"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/3.pala/pala.png"></a></p>
+<p>Dado que nuestra pala debe generar colisiones, necesitaremos añadir un nuevo componente <strong>BoxCollider2D</strong>.</p>
+<h2 id="comportamiento">Comportamiento</h2>
+<p>Para el comportamiento de nuestra pala, crearemos un nuevo script. Antes de eso, crearemos la carpeta &ldquo;Scripts&rdquo; dentro de la carpeta &ldquo;Assets&rdquo;:</p>
+<p><a href="#R-image-8721285c492f35b73b8db25190aadba2" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/3.pala/scriptpala.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8721285c492f35b73b8db25190aadba2"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/3.pala/scriptpala.png"></a></p>
+<p>Una vez creada, asignaremos este script al objeto Pala.</p>
+<p>En el script, primero definiremos tres constantes, dos para delimitar el eje X y otra más, serializable, para la velocidad:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">float</span> MAX_X = <span style="color:#ae81ff">3.1f</span>; 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">float</span> MIN_X = -<span style="color:#ae81ff">3.1f</span>; 
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">[SerializeField]</span> <span style="color:#66d9ef">float</span> speed; </span></span></code></pre></div>
+<p>Luego, trasladaremos la pala dependiendo de la tecla pulsada, en una dirección u otra. Para ello, obtendremos la posición actual y la modificaremos:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> Update()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">float</span> x = transform.position.x; <span style="color:#75715e">// Obtener la posición actual de x de la pala</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (x &gt; MIN_X &amp;&amp; Input.GetKey(<span style="color:#e6db74">&#34;left&#34;</span>)) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Desplazamiento hacia la izquierda con un valor negativo</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Utilizamos deltaTime para obtener una referencia de la velocidad independiente del hardware</span>
+</span></span><span style="display:flex;"><span>        transform.Translate(-speed * Time.deltaTime, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (x &lt; MAX_X &amp;&amp; Input.GetKey(<span style="color:#e6db74">&#34;right&#34;</span>)) {
+</span></span><span style="display:flex;"><span>        transform.Translate(speed * Time.deltaTime, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>); <span style="color:#75715e">// Desplazamiento hacia la derecha</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+
+  <footer class="footline"></article>
+<footer>
+   <i class='fas fa-user'></i>  <span itemprop="name"> Autor/a: Sabela Sobrino</span>
+
+<i class='fas fa-calendar'></i> Última actualización: 04.02.2026 
+</footer>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="etiquetas">Etiquetas</h1>
+
+<p>Vamos a asignar una etiqueta a todos los objetos que tenemos en la escena:</p>
+<p><a href="#R-image-d89713fbea8b2a09291aa64bb1af6d62" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/4.etiquetas/tags.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d89713fbea8b2a09291aa64bb1af6d62"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/4.etiquetas/tags.png"></a></p>
+<p>Una vez creadas las etiquetas, solo necesitamos asignarlas a cada objeto.</p>
+
+  <footer class="footline"></article>
+<footer>
+   <i class='fas fa-user'></i>  <span itemprop="name"> Autor/a: Sabela Sobrino</span>
+
+<i class='fas fa-calendar'></i> Última actualización: 04.02.2026 
+</footer>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="prefabs">Prefabs</h1>
+
+<p>Ahora vamos a crear los ladrillos utilizando un nuevo componente llamado &ldquo;prefabs&rdquo; o &ldquo;prefabricado&rdquo;. Esto nos permitirá crear copias de un objeto de manera que si modificamos el objeto base, se modificarán todas las copias.</p>
+<p>Comenzaremos creando un cuadrado al que daremos unas dimensiones para que simule un ladrillo y un color amarillo:</p>
+<p><a href="#R-image-8843a2dddb2cbcdbc087122023ef5dc7" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/5.prefabs/ladrillo.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8843a2dddb2cbcdbc087122023ef5dc7"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/5.prefabs/ladrillo.png"></a></p>
+<p>A partir de este ladrillo, podemos copiarlo y desplazarlo para generar una fila de ladrillos. Sin embargo, si queremos cambiar alguna de sus propiedades, tendríamos que ir uno por uno seleccionándolos y modificándolos. Esto se resuelve con los prefabs.</p>
+<p>Para crear un prefab, crearemos una carpeta llamada &ldquo;Prefabs&rdquo; dentro de la carpeta &ldquo;Assets&rdquo; y arrastraremos nuestro ladrillo base a esa carpeta:</p>
+<p><a href="#R-image-fae25466d7ccae0e58ab3121bdedbaaf" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/5.prefabs/carpeta_prefabs.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fae25466d7ccae0e58ab3121bdedbaaf"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/5.prefabs/carpeta_prefabs.png"></a></p>
+<p>Podemos observar cómo el elemento cambia de apariencia y se resalta en azul. Ahora podemos arrastrar de nuevo el objeto prefab a nuestra escena como si fuera otro elemento predefinido de Unity.</p>
+<p>La ventaja de este componente es que si lo editamos, se editarán todas las copias que tengamos dentro de nuestro proyecto. Por ejemplo, vamos a añadirle un box-collider:</p>
+<p><a href="#R-image-76b310c00cbcc18f1114dd59d4308dbd" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/5.prefabs/prefab_collider.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-76b310c00cbcc18f1114dd59d4308dbd"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/5.prefabs/prefab_collider.png"></a></p>
+<p>Ahora, cualquier elemento &ldquo;ladrillo&rdquo; que tengamos en nuestra escena tendrá ese componente añadido, al igual que cualquier otro que añadamos a partir de ahora.</p>
+<p>Esto nos permite cambiar cualquier propiedad o incluso añadir nuevos objetos de manera eficiente.</p>
+
+  <footer class="footline"></article>
+<footer>
+   <i class='fas fa-user'></i>  <span itemprop="name"> Autor/a: Sabela Sobrino</span>
+
+<i class='fas fa-calendar'></i> Última actualización: 04.02.2026 
+</footer>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="pared-de-ladrilos">Pared de Ladrilos</h1>
+
+<p>En el juego original, tenemos una pared de 8 filas x 14 columnas de ladrillos de distintos colores. Sin embargo, vamos a reducir la cantidad de ladrillos a 8 por fila.</p>
+<p>Para cada una de estas filas, crearemos un prefab de ladrillo distinto para identificar con qué ladrillo estamos colisionando, simplemente asignando una etiqueta diferente a cada uno de esos prefabs.</p>
+<p>Para cada ladrillo, crearemos un cuadrado negro (que no se verá pero tendrá el collider) y un cuadrado superpuesto con diferentes colores:</p>
+<p><a href="#R-image-7c5bf441f7ae6d0ae5434cbc3771c716" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/6.pared/ladrillo_amarillo.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7c5bf441f7ae6d0ae5434cbc3771c716"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/6.pared/ladrillo_amarillo.png"></a></p>
+<p>Al cuadrado negro, le añadiremos un collider y una etiqueta:</p>
+<p><a href="#R-image-8eac20ed5945e484b29c17fa0dc47960" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/6.pared/ladrillo_collider.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8eac20ed5945e484b29c17fa0dc47960"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/6.pared/ladrillo_collider.png"></a></p>
+<p>Luego, lo arrastramos a la carpeta &ldquo;Prefabs&rdquo; para crear un prefab.</p>
+<p>Es posible que dentro del panel de Scene no veamos el relleno del ladrillo porque Unity usa un sistema de capas y el relleno se quedó en la capa de atrás. Para llevar el relleno a primer plano, podemos editar el prefab y modificar la propiedad &ldquo;orden en Layer&rdquo; con un valor positivo.</p>
+<p>Ahora podremos generar nuestra fila de objetos amarillos, que agruparemos en un objeto vacío llamado &ldquo;Fila-amarilla&rdquo;. Para posicionar los ladrillos de forma precisa, podemos seleccionar uno de ellos, pulsar la tecla &ldquo;V&rdquo; y moverlo. Esto nos permitirá posicionar el ladrillo en el mismo vértice que el anterior, pegándose a cualquier vértice vecino que le indiquemos.</p>
+<p>Generaremos el resto de ladrillos (prefabs), cambiando las etiquetas y el color de cada uno:</p>
+<p><a href="#R-image-ab473e6047f1682f730a85e97e2f4bc5" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/6.pared/filas.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ab473e6047f1682f730a85e97e2f4bc5"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/6.pared/filas.png"></a></p>
+
+  <footer class="footline"></article>
+<footer>
+   <i class='fas fa-user'></i>  <span itemprop="name"> Autor/a: Sabela Sobrino</span>
+
+<i class='fas fa-calendar'></i> Última actualización: 04.02.2026 
+</footer>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="pelota">Pelota</h1>
+
+<p>Vamos a crear una pelota agregando un cuadrado a nuestra escena con las propiedades de collider y rigidbody, y realizando algunos ajustes:</p>
+<p><a href="#R-image-c37ea3a15fa966dea8436da0d2b31cb3" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/7.pelota/pelota.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c37ea3a15fa966dea8436da0d2b31cb3"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/7.pelota/pelota.png"></a></p>
+<ul>
+<li>Congelaremos la rotación en el eje z.</li>
+<li>Reduciremos la masa.</li>
+<li>Eliminaremos la gravedad.</li>
+<li>Eliminaremos los rozamientos.</li>
+<li>Asignaremos un material (Create-&gt;2D-&gt;Physic Material 2D) para mejorar el rebote de la pelota, eliminando el rozamiento y configurando el rebote a 1.</li>
+</ul>
+<p><a href="#R-image-8c074e13db4af12ba46bf3e31de5ae71" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/7.pelota/material.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-8c074e13db4af12ba46bf3e31de5ae71"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/7.pelota/material.png"></a></p>
+<h3 id="comportamiento">Comportamiento</h3>
+<p>Vamos a generar un script llamado &ldquo;PelotaController&rdquo; y se lo asignaremos a la pelota, añadiendo los siguientes componentes:</p>
+<ul>
+<li>La pelota se lanzará desde el centro de la pantalla. La posición y velocidad se resetearán (a 0) antes del lanzamiento.</li>
+<li>Siempre se lanzará hacia abajo con un ángulo fijo, por ejemplo, 45º.</li>
+<li>Estableceremos un retardo antes del lanzamiento, por ejemplo, 1.5 segundos.</li>
+</ul>
+<p>Para lograr esto, definiremos un método que nos permita relanzar la pelota en determinadas situaciones. Primero, resetearemos la posición y la velocidad de la pelota:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">PelotaController</span> : MonoBehaviour
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    Rigidbody2D rb; 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> Start()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        rb = GetComponent&lt;Rigidbody2D&gt;();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> Update()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> LanzarPelota(){
+</span></span><span style="display:flex;"><span>        transform.position = Vector3.zero;
+</span></span><span style="display:flex;"><span>        rb.linearVelocity = Vector2.zero;</span></span></code></pre></div>
+<p>Luego, calcularemos la velocidad y dirección para que tenga un ángulo de 45º y la pelota vaya hacia abajo:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> dirX, dirY = -<span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>        dirX = Random.Range(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>) == <span style="color:#ae81ff">0</span> ? -<span style="color:#ae81ff">1</span> : <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>        Vector2 dir = <span style="color:#66d9ef">new</span> Vector2(dirX, dirY);
+</span></span><span style="display:flex;"><span>        dir.Normalize();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        rb.AddForce(dir * force, ForceMode2D.Impulse);
+</span></span><span style="display:flex;"><span>    }</span></span></code></pre></div>
+<p>Finalmente, invocaremos al método con un retardo (serializable):</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#a6e22e">    [SerializeField]</span> <span style="color:#66d9ef">float</span> delay;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> Start()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        rb = GetComponent&lt;Rigidbody2D&gt;();
+</span></span><span style="display:flex;"><span>        Invoke(<span style="color:#e6db74">&#34;LanzarPelota&#34;</span>, delay);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+
+  <footer class="footline"></article>
+<footer>
+   <i class='fas fa-user'></i>  <span itemprop="name"> Autor/a: Sabela Sobrino</span>
+
+<i class='fas fa-calendar'></i> Última actualización: 04.02.2026 
+</footer>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="relanzar-pelota">Relanzar Pelota</h1>
+
+<p>Para relanzar la pelota cada vez que salga por el límite inferior, implementaremos el método OnTriggerEnter2D(). En este caso, la pelota atravesará la pared en lugar de producir una colisión, por lo que utilizaremos este método.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> OnTriggerEnter2D(Collider2D other) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Comprobamos si el objeto que estamos atravesando es la pared inferior </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(other.tag == <span style="color:#e6db74">&#34;ParedInferior&#34;</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Volvemos a lanzar la pelota</span>
+</span></span><span style="display:flex;"><span>        Invoke(<span style="color:#e6db74">&#34;LanzarPelota&#34;</span>, delay);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Luego, invocaremos al método de lanzar pelota.</p>
+
+  <footer class="footline"></article>
+<footer>
+   <i class='fas fa-user'></i>  <span itemprop="name"> Autor/a: Sabela Sobrino</span>
+
+<i class='fas fa-calendar'></i> Última actualización: 04.02.2026 
+</footer>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="destrucción-de-ladrillos">Destrucción de Ladrillos</h1>
+
+<p>Para destruir los ladrillos, implementaremos el comportamiento en el método OnCollisionEnter2D, que se invocará cada vez que la pelota colisione con algún objeto de la escena. Lo primero que debemos hacer es determinar con qué objeto estamos colisionando:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> OnCollisionEnter2D(Collision2D other) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Almacenamos la etiqueta del objeto con el que estamos colisionando</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">string</span> tag = other.gameObject.tag;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Para identificar en qué tipo de ladrillo estamos colisionando, utilizaremos un diccionario donde almacenaremos las etiquetas y las puntuaciones de cada uno de ellos:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#75715e">// Estructura donde almacenaremos las etiquetas y la puntuación de cada ladrillo</span>
+</span></span><span style="display:flex;"><span>Dictionary&lt;<span style="color:#66d9ef">string</span>,<span style="color:#66d9ef">int</span>&gt; ladrillos = <span style="color:#66d9ef">new</span> Dictionary&lt;<span style="color:#66d9ef">string</span>, <span style="color:#66d9ef">int</span>&gt;(){
+</span></span><span style="display:flex;"><span>    {<span style="color:#e6db74">&#34;Ladrillo-Amarillo&#34;</span>, <span style="color:#ae81ff">10</span>},
+</span></span><span style="display:flex;"><span>    {<span style="color:#e6db74">&#34;Ladrillo-Verde&#34;</span>, <span style="color:#ae81ff">15</span>},
+</span></span><span style="display:flex;"><span>    {<span style="color:#e6db74">&#34;Ladrillo-Naranja&#34;</span>, <span style="color:#ae81ff">20</span>},
+</span></span><span style="display:flex;"><span>    {<span style="color:#e6db74">&#34;Ladrillo-Rojo&#34;</span>, <span style="color:#ae81ff">25</span>},
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></div>
+<p>Se debe añadir la siguiente directiva al principio del código:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System.Collections.Generic;</span></span></code></pre></div>
+<p>Con esta estructura de datos, podemos utilizar un método de la propia colección para consultar si una etiqueta está presente y destruir el ladrillo correspondiente:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> OnCollisionEnter2D(Collision2D other) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Almacenamos la etiqueta del objeto con el que estamos colisionando</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">string</span> tag = other.gameObject.tag;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Comprobamos si la etiqueta es un ladrillo </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (ladrillos.ContainsKey(tag)) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Destruimos el objeto</span>
+</span></span><span style="display:flex;"><span>        Destroy(other.gameObject);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Al ejecutar, veremos cómo los ladrillos desaparecen de la jerarquía. Probaremos con todos los ladrillos para asegurarnos de que desaparecen todos.</p>
+
+  <footer class="footline"></article>
+<footer>
+   <i class='fas fa-user'></i>  <span itemprop="name"> Autor/a: Sabela Sobrino</span>
+
+<i class='fas fa-calendar'></i> Última actualización: 04.02.2026 
+</footer>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="golpeo-dirigido">Golpeo dirigido</h1>
+
+<p>Al ejecutar, observamos que no tenemos ningún control horizontal sobre la pelota.</p>
+<p>En el caso de que la pelota esté colisionando con la pala, vamos a obtener la posición de la pala:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> OnCollisionEnter2D(Collision2D other) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Almacenamos la etiqueta del objeto con el que estamos colisionando</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">string</span> tag = other.gameObject.tag;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Comprobamos si la etiqueta es un ladrillo </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (ladrillos.ContainsKey(tag)) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Destruimos el objeto</span>
+</span></span><span style="display:flex;"><span>        Destroy(other.gameObject);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (tag == <span style="color:#e6db74">&#34;Pala&#34;</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Obtenemos la posición de la pala</span>
+</span></span><span style="display:flex;"><span>        Vector3 pala = other.gameObject.transform.position; 
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Obtenemos el punto de contacto. Cuando colisionan dos objetos, colisionan en una superficie, y devolvería todos los puntos donde colisionan. Nos quedamos con el primero </span>
+</span></span><span style="display:flex;"><span>        Vector2 contact = other.GetContact(<span style="color:#ae81ff">0</span>).point;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Comprobamos la dirección en x (para saber si está viajando hacia la izquierda o a la derecha)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Si la pelota está viajando desde la izquierda hacia la derecha y está golpeando con la parte derecha de la pala</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// o si la pelota está viajando desde la derecha hacia la izquierda y está golpeando con la parte izquierda de la pala</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(rb.linearVelocity.x &lt; <span style="color:#ae81ff">0</span> &amp;&amp; contact.x &gt; pala.x ||
+</span></span><span style="display:flex;"><span>                rb.linearVelocity.x &gt; <span style="color:#ae81ff">0</span> &amp;&amp; contact.x &lt; pala.x){
+</span></span><span style="display:flex;"><span>                rb.linearVelocity = <span style="color:#66d9ef">new</span> Vector2(-rb.linearVelocityX, rb.linearVelocityY);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+
+  <footer class="footline"></article>
+<footer>
+   <i class='fas fa-user'></i>  <span itemprop="name"> Autor/a: Sabela Sobrino</span>
+
+<i class='fas fa-calendar'></i> Última actualización: 04.02.2026 
+</footer>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="controlar-puntuación">Controlar Puntuación</h1>
+
+<p>Vamos a crear un controlador llamado `GameManager`` que nos permitirá llevar un registro de la puntuación. Asociaremos este controlador a un objeto vacío en la escena.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> UnityEngine;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> TMPro;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GameManager</span> : MonoBehaviour
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Variable para llevar el control de la puntuación</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> score = <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Referencia al texto para mostrar la puntuación en la interfaz</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [SerializeField]</span> TextMeshProUGUI txtScore;</span></span></code></pre></div>
+<p>Luego, necesitamos un método llamado OnGUI para actualizar la puntuación en la interfaz. Este método se utiliza para renderizar y gestionar eventos de interfaz de usuario mediante código.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> OnGUI()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Actualizamos el texto de la puntuación</span>
+</span></span><span style="display:flex;"><span>        txtScore.text = <span style="color:#66d9ef">string</span>.Format(<span style="color:#e6db74">&#34;{0,3:D3}&#34;</span>, score);  <span style="color:#75715e">// Formateamos a 3 dígitos</span>
+</span></span><span style="display:flex;"><span>    }</span></span></code></pre></div>
+<p>Finalmente, debemos tener un método para actualizar el valor de la puntuación:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>    <span style="color:#75715e">// Método para actualizar la puntuación</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> UpdateScore(<span style="color:#66d9ef">int</span> points)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        score += points;
+</span></span><span style="display:flex;"><span>    }</span></span></code></pre></div>
+<p>Este método será invocado desde la pelota y el PelotaController. Desde el PelotaController, que es el encargado de manejar las colisiones, llamaremos a este método dentro de OnCollisionEnter2D:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#75715e">//Engádese a referencia ao GameManager ao inicio</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">[SerializeField]</span> GameManager gameManager;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//...</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> OnCollisionEnter2D(Collision2D other)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Almacenamos la etiqueta del objeto con el que estamos colisionando</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">string</span> tag = other.gameObject.tag;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Comprobamos si la etiqueta corresponde a un ladrillo</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (ladrillos.ContainsKey(tag))
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Actualizamos la puntuación utilizando el valor del diccionario</span>
+</span></span><span style="display:flex;"><span>        gameManager.UpdateScore(ladrillos[tag]);
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Destruimos el objeto</span>
+</span></span><span style="display:flex;"><span>        Destroy(other.gameObject);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Este método actualiza la puntuación cuando la pelota colisiona con un ladrillo y lo destruye.</p>
+
+  <footer class="footline"></article>
+<footer>
+   <i class='fas fa-user'></i>  <span itemprop="name"> Autor/a: Sabela Sobrino</span>
+
+<i class='fas fa-calendar'></i> Última actualización: 04.02.2026 
+</footer>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="vidas">Vidas</h1>
+
+<p>Vamos a añadir un marcador para contar las vidas del jugador:</p>
+<ol>
+<li>Visualizaremos en la pantalla de juego el número de vidas actual. Generaremos un nuevo texto que nos permita visualizar las vidas del jugador con un valor inicial de 0.</li>
+</ol>
+<p><a href="#R-image-31047a690f75b17cd59af32e997c1683" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/13.vidas/vidas.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-31047a690f75b17cd59af32e997c1683"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/13.vidas/vidas.png"></a></p>
+<ol start="2">
+<li>Añadiremos un contador (atributo) que nos permita llevar un control de las vidas del jugador:</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GameManager</span> : MonoBehaviour
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [SerializeField]</span> <span style="color:#66d9ef">int</span> lives; 
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [SerializeField]</span> TextMeshProUGUI txtlives; </span></span></code></pre></div>
+<ol start="3">
+<li>Crearemos un método que nos permita actualizar el marcador de vidas:</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> OnGUI() {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Actualizamos el texto del marcador de vidas</span>
+</span></span><span style="display:flex;"><span>        txtlives.text = lives.ToString();
+</span></span><span style="display:flex;"><span>    }</span></span></code></pre></div>
+<ol start="4">
+<li>También crearemos un mecanismo (método) que nos permita eliminar (o añadir) vidas:</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>    <span style="color:#75715e">// Método para actualizar las vidas</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> Updatelives()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        lives--;
+</span></span><span style="display:flex;"><span>    }</span></span></code></pre></div>
+<p>En el controlador de la pelota, modificaremos el número de vidas cada vez que la pelota atraviese la pared inferior:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> OnTriggerEnter2D(Collider2D other) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Comprobamos que el objeto que estamos atravesando es la pared inferior</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (other.tag == <span style="color:#e6db74">&#34;ParedInferior&#34;</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Actualizamos el contador de vidas</span>
+</span></span><span style="display:flex;"><span>        gameManager.Updatelives();
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Volvemos a lanzar la pelota</span>
+</span></span><span style="display:flex;"><span>        Invoke(<span style="color:#e6db74">&#34;LanzarPelota&#34;</span>, delay);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+
+  <footer class="footline"></article>
+<footer>
+   <i class='fas fa-user'></i>  <span itemprop="name"> Autor/a: Sabela Sobrino</span>
+
+<i class='fas fa-calendar'></i> Última actualización: 04.02.2026 
+</footer>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="audio">Audio</h1>
+
+<p>Vamos a añadir sonido al juego. Unity nos ofrece un sistema para la reproducción de sonidos en entornos tridimensionales. Esto se logra diferenciando entre los objetos que reciben el sonido (audioListener) y los que lo generan (audioSource).</p>
+<ul>
+<li><strong>AudioListener</strong>: Encargado de recibir el sonido.</li>
+<li><strong>AudioSource</strong>: Generará el sonido.</li>
+</ul>
+<p>Estos componentes estarán asociados a un gameObject posicionado en la escena. Unity puede generar ambientes sonoros espaciales, lo que significa que el sonido cambiará dependiendo de su posición en relación con el oyente.</p>
+<p>Para incorporar sonidos a nuestro juego, lo primero que haremos será importar los <a href="recursos/Sounds">archivos</a> de sonido. Crearemos una carpeta en Assets para almacenarlos:</p>
+<p><a href="#R-image-e279f1185dbb18856bc5b8c59eadef0a" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/14.audio/sounds.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e279f1185dbb18856bc5b8c59eadef0a"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/14.audio/sounds.png"></a></p>
+<p>Cada archivo de sonido se importará como un AudioClip.</p>
+<h2 id="audiolistener-y-audiosource">AudioListener y AudioSource</h2>
+<p>Vamos a habilitar los sonidos en Unity mediante un AudioListener y un AudioSource. La cámara ya viene equipada con un AudioListener, así que no necesitaremos hacer nada más en este sentido. La pelota será la encargada de generar los sonidos al rebotar, por lo que le asignaremos un AudioSource. Aunque podríamos asignar un clip directamente si solo ejecutara un sonido, en este caso, la pelota emitirá varios sonidos según el tipo de rebote, por lo que lo manejaremos desde el código.</p>
+<p>Lo primero será declarar una variable para cada clip de sonido que necesitemos reproducir:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">PelotaController</span> : MonoBehaviour
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [SerializeField]</span> AudioClip sfxPaddel;  <span style="color:#75715e">// Sonido al chocar con la pala</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [SerializeField]</span> AudioClip sfxBrick;   <span style="color:#75715e">// Sonido al chocar con un ladrillo</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [SerializeField]</span> AudioClip sfxWall;    <span style="color:#75715e">// Sonido al chocar con una pared</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [SerializeField]</span> AudioClip sfxFail;    <span style="color:#75715e">// Sonido al salir por la pared inferior</span></span></span></code></pre></div>
+<p>Luego, inicializaremos el componente AudioSource en el método Start:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">PelotaController</span> : MonoBehaviour
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    AudioSource sfx;  <span style="color:#75715e">// Componente AudioSource</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> Start()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        sfx = GetComponent&lt;AudioSource&gt;();
+</span></span><span style="display:flex;"><span>    }</span></span></code></pre></div>
+<p>Ahora, cuando la pelota detecte colisiones, asignaremos el clip de audio correspondiente y lo reproduciremos:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> OnCollisionEnter2D(Collision2D other)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">string</span> tag = other.gameObject.tag;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (tag == <span style="color:#e6db74">&#34;Pala&#34;</span>)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        sfx.clip = sfxPaddel;
+</span></span><span style="display:flex;"><span>        sfx.Play();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (ladrillos.ContainsKey(tag))
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        sfx.clip = sfxBrick;
+</span></span><span style="display:flex;"><span>        sfx.Play();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (tag == <span style="color:#e6db74">&#34;ParedDerecha&#34;</span> || tag == <span style="color:#e6db74">&#34;ParedIzquierda&#34;</span> || tag == <span style="color:#e6db74">&#34;ParedSuperior&#34;</span>)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        sfx.clip = sfxWall;
+</span></span><span style="display:flex;"><span>        sfx.Play();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Finalmente, cuando la pelota atraviese la pared inferior, reproduciremos el sonido correspondiente:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> OnTriggerEnter2D(Collider2D other)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (other.tag == <span style="color:#e6db74">&#34;ParedInferior&#34;</span>)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        sfx.clip = sfxFail;
+</span></span><span style="display:flex;"><span>        sfx.Play();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+
+  <footer class="footline"></article>
+<footer>
+   <i class='fas fa-user'></i>  <span itemprop="name"> Autor/a: Sabela Sobrino</span>
+
+<i class='fas fa-calendar'></i> Última actualización: 04.02.2026 
+</footer>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="dificultad-progresiva">Dificultad progresiva</h1>
+
+<p>Para aumentar progresivamente la dificultad del juego, vamos a implementar mecánicas que afecten la velocidad de la pelota.</p>
+<h3 id="incremento-de-velocidad">Incremento de Velocidad</h3>
+<p>Introduciremos un contador para rastrear la cantidad de veces que la pelota impacta con la pala. Cada vez que este contador alcance un múltiplo de 4, aumentaremos la velocidad de la pelota. Esto se logrará aplicando una fuerza adicional en la dirección actual de movimiento de la pelota.</p>
+<ol>
+<li>Vamos a establecer dos variables importantes: el contador de golpes y la fuerza que aplicaremos para incrementar la <strong>velocidad</strong> de la pelota:</li>
+</ol>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">PelotaController</span> : MonoBehaviour
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Mantenemos un registro de los golpes con la pala.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> contadorGolpes = <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Definimos la fuerza a aplicar para aumentar la velocidad.</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [SerializeField]</span> <span style="color:#66d9ef">float</span> fuerzaIncrementada;</span></span></code></pre></div>
+<p>Una vez configuradas estas variables, procedemos a aplicar la <strong>fuerza</strong> al objeto Rigidbody (rb) cuando la pelota colisiona con la pala:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> OnCollisionEnter2D(Collision2D other) 
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(tag == <span style="color:#e6db74">&#34;Pala&#34;</span>)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Incrementamos el contador de golpes cada vez que la pelota golpea la pala.</span>
+</span></span><span style="display:flex;"><span>        contadorGolpes++;
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Si el contador de golpes es un múltiplo de 4, incrementamos la velocidad.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(contadorGolpes % <span style="color:#ae81ff">4</span> == <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// Aplicamos una fuerza adicional en la dirección actual de movimiento de la pelota.</span>
+</span></span><span style="display:flex;"><span>            rb.AddForce(rb.velocity * fuerzaIncrementada, ForceMode2D.Impulse);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h3 id="tamaño-pala">Tamaño pala</h3>
+<p>Para introducir un cambio en la dinámica del juego, hemos implementado una mecánica que <strong>reduce</strong> a la mitad el <strong>tamaño</strong> de la pala cuando la pelota toca la pared superior. Además, aseguraremos que el tamaño de la pala pueda restaurarse a su valor original en situaciones específicas, como cuando el jugador pierde una vida o al cambiar de fase.</p>
+<p>Para lograr esto, creamos un objeto serializable que representa la pala:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#a6e22e">[SerializeField]</span> GameObject pala;</span></span></code></pre></div>
+<p>Asignamos este objeto en el editor para inicializarla. Una alternativa a esto sería obtener una referencia a la pala durante la ejecución del juego, lo que resulta más eficiente para objetos <strong>dinámicos</strong>:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>GameObject pala;
+</span></span><span style="display:flex;"><span>pala = GameObject.FindWithTag(<span style="color:#e6db74">&#34;pala&#34;</span>);</span></span></code></pre></div>
+<p>A continuación, declaramos una variable booleana &lsquo;halved&rsquo; para rastrear si el tamaño de la pala ha sido reducido e implementado un método para reducir o restaurar su tamaño:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">bool</span> halved = <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> OnCollisionEnter2D(Collision2D other) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(!halved &amp;&amp; tag == <span style="color:#e6db74">&#34;ParedSuperior&#34;</span> ){
+</span></span><span style="display:flex;"><span>        HalvePaddle(<span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> HalvePaddle(<span style="color:#66d9ef">bool</span> reducir){
+</span></span><span style="display:flex;"><span>    halved = reducir; 
+</span></span><span style="display:flex;"><span>    Vector3 escalaActual = pala.transform.localScale;
+</span></span><span style="display:flex;"><span>    pala.transform.localScale = reducir ? 
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">new</span> Vector3(escalaActual.x * <span style="color:#ae81ff">0.5f</span>, escalaActual.y, escalaActual.z):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">new</span> Vector3(escalaActual.x * <span style="color:#ae81ff">2f</span>, escalaActual.y, escalaActual.z);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Cuando el jugador pierde una vida, restauramos automáticamente el tamaño de la pala si ha sido reducido:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> OnTriggerEnter2D(Collider2D other) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(other.tag == <span style="color:#e6db74">&#34;ParedInferior&#34;</span>){
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// ...</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#66d9ef">if</span>(halved){
+</span></span><span style="display:flex;"><span>        HalvePaddle(<span style="color:#66d9ef">false</span>);
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>         }
+</span></span><span style="display:flex;"><span>         <span style="color:#75715e">// ...</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+
+  <footer class="footline"></article>
+<footer>
+   <i class='fas fa-user'></i>  <span itemprop="name"> Autor/a: Sabela Sobrino</span>
+
+<i class='fas fa-calendar'></i> Última actualización: 04.02.2026 
+</footer>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="player-settings">Player Settings</h1>
+
+<p>Para generar el ejecutable de nuestro juego, primero accederemos a Build Settings. Desde allí, elegiremos la plataforma de destino entre las opciones disponibles. Luego, seleccionaremos &ldquo;Player Settings&rdquo; y dentro de la sección &ldquo;Player&rdquo;, expandiremos la categoría &ldquo;Resolution and Presentation&rdquo;. Para mantener una relación de aspecto de 3x4, optaremos por una resolución de 768 x 1024, que podemos verificar fácilmente en línea:</p>
+<p><a href="#R-image-392efd4166a91cea0685f4eac79fac42" class="lightbox-link"><img alt="Configuración de Ventana" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/16.player/windowes.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-392efd4166a91cea0685f4eac79fac42"><img alt="Configuración de Ventana" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/16.player/windowes.png"></a></p>
+
+  <footer class="footline"></article>
+<footer>
+   <i class='fas fa-user'></i>  <span itemprop="name"> Autor/a: Sabela Sobrino</span>
+
+<i class='fas fa-calendar'></i> Última actualización: 04.02.2026 
+</footer>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="sceenes">Sceenes</h1>
+
+<p>Vamos a introducir múltiples escenas en nuestro juego para permitir la transición entre distintas pantallas.</p>
+
+  <footer class="footline"></article>
+<footer>
+   <i class='fas fa-user'></i>  <span itemprop="name"> Autor/a: Sabela Sobrino</span>
+
+<i class='fas fa-calendar'></i> Última actualización: 04.02.2026 
+</footer>
+  </footer>
+</article>
+          <section>
+            <h1 class="a11y-only">Subsecciones de Sceenes</h1>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="scene-00">Scene-00</h1>
+
+<p>Estamos creando una escena de presentación similar al juego GamePlayer, donde la pelota rebota hasta que se inicia el juego. Una vez iniciado, la barra inicial (que ocupa toda la pantalla) se reducirá. Dado que esta escena será muy similar a la actual, vamos a duplicarla:</p>
+<p><a href="#R-image-b4ce426b5e89b3f1e29c1fde8131a970" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/1.scene_00/scene00.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b4ce426b5e89b3f1e29c1fde8131a970"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/1.scene_00/scene00.png"></a></p>
+<p>Nuestro primer paso en esta nueva escena es ajustar el tamaño de la pala para que ocupe todo el ancho de la pantalla. Como la pala no se moverá y no necesitaremos el script del GameManager, podemos eliminarlo (sin borrarlo de la carpeta de scripts, ya que esos scripts son parte de mi proyecto):</p>
+<p><a href="#R-image-5623263334adacdb7d309b7ba4f77e87" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/1.scene_00/pala00.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5623263334adacdb7d309b7ba4f77e87"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/1.scene_00/pala00.png"></a></p>
+<p>Luego, vamos a cambiar el comportamiento de la pelota. Para ello, necesitaremos un nuevo <strong>script</strong> para la pelota. Dado que utilizaremos muchos métodos del script anterior, podemos <strong>duplicarlo</strong> y asignarle un nuevo nombre: <code>PelotaController0</code>. Al abrir este nuevo script, lo primero que haremos será cambiar el nombre de la clase para que coincida con el nombre del archivo.</p>
+<p>Eliminaremos todo el código que no sea necesario, conservando únicamente el código relacionado con el sonido y el movimiento de la pala:</p>
+<p>Aquí tienes el código sin cambios:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System.Collections;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System.Collections.Generic;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> UnityEngine;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">PelotaController0</span> : MonoBehaviour
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    Rigidbody2D rb; 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    AudioSource sfx;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [SerializeField]</span> AudioClip sfxPaddle;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [SerializeField]</span> AudioClip sfxBrick;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [SerializeField]</span> AudioClip sfxWall;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//Será serializable para poder acceder a través de Unity</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [SerializeField]</span> <span style="color:#66d9ef">float</span> force;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [SerializeField]</span> <span style="color:#66d9ef">float</span> delay;
+</span></span><span style="display:flex;"><span>    Dictionary&lt;<span style="color:#66d9ef">string</span>,<span style="color:#66d9ef">int</span>&gt; ladrillos = <span style="color:#66d9ef">new</span> Dictionary&lt;<span style="color:#66d9ef">string</span>, <span style="color:#66d9ef">int</span>&gt;(){
+</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;Ladrillo-Amarillo&#34;</span>, <span style="color:#ae81ff">10</span>},
+</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;Ladrillo-Verde&#34;</span>, <span style="color:#ae81ff">15</span>},
+</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;Ladrillo-Naranja&#34;</span>, <span style="color:#ae81ff">20</span>},
+</span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;Ladrillo-Rojo&#34;</span>, <span style="color:#ae81ff">25</span>},
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> Start()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        sfx = GetComponent&lt;AudioSource&gt;();
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Inicializamos la variable RigidBody</span>
+</span></span><span style="display:flex;"><span>        rb = GetComponent&lt;Rigidbody2D&gt;();
+</span></span><span style="display:flex;"><span>        Invoke(<span style="color:#e6db74">&#34;LanzarPelota&#34;</span>, delay);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> LanzarPelota(){
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Reseteamos posición y velocidad</span>
+</span></span><span style="display:flex;"><span>        transform.position = Vector3.zero; <span style="color:#75715e">//Accedemos directamente a la posición de la pelota y la reseteamos a la posición (0,0,0) </span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Para resetear la velocidad debemos acceder al componente RigidBody </span>
+</span></span><span style="display:flex;"><span>        rb.velocity = Vector2.zero;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Obtener una dirección aleatoria en el eje X </span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> dirX, dirY = -<span style="color:#ae81ff">1</span>; <span style="color:#75715e">//En el eje y siempre se desplazará hacia abajo </span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Queremos un ángulo 45º por lo que tiene que ser el mismo valor en eje X y en eje Y. Como en Y es -1 </span>
+</span></span><span style="display:flex;"><span>        dirX = Random.Range(<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">2</span>) == <span style="color:#ae81ff">0</span> ? -<span style="color:#ae81ff">1</span> : <span style="color:#ae81ff">1</span>;  <span style="color:#75715e">//Como son enteros son exclusivos </span>
+</span></span><span style="display:flex;"><span>        Vector2 dir = <span style="color:#66d9ef">new</span> Vector2(dirX, dirY);
+</span></span><span style="display:flex;"><span>        dir.Normalize(); <span style="color:#75715e">//Podemos normalizarlo (no es necesario)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Aplicamos una fuerza determinando la dirección y una fuerza </span>
+</span></span><span style="display:flex;"><span>        rb.AddForce(dir * force, ForceMode2D.Impulse);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> OnCollisionEnter2D(Collision2D other) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Almacenamos la etiqueta que tiene el objto con el que estamos colisionando</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">string</span> tag = other.gameObject.tag;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>     
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Comprobamos si estamos chocando con una pared</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(tag == <span style="color:#e6db74">&#34;ParedDerecha&#34;</span> || tag == <span style="color:#e6db74">&#34;ParedIzquierda&#34;</span> || tag == <span style="color:#e6db74">&#34;ParedSuperior&#34;</span> ){
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            sfx.clip = sfxWall; 
+</span></span><span style="display:flex;"><span>            sfx.Play();
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Comprobamos si la etiqueta es un ladrillo </span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(ladrillos.ContainsKey(tag)){
+</span></span><span style="display:flex;"><span>            sfx.clip = sfxBrick; 
+</span></span><span style="display:flex;"><span>            sfx.Play();
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span>(tag == <span style="color:#e6db74">&#34;Pala&#34;</span>){
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            sfx.clip = sfxPaddle; 
+</span></span><span style="display:flex;"><span>            sfx.Play();
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Necesitamos asignar todos los sonidos y parámetros como serializables. Sería conveniente crear una única clase para gestionar todos los sonidos. Actualmente, la pelota está rebotando continuamente entre los diferentes objetos de nuestra escena.</p>
+<h3 id="inicio">Inicio</h3>
+<p>Ahora vamos a crear un mensaje de texto para indicar al jugador que pulse una tecla para comenzar a jugar.</p>
+<p><a href="#R-image-b02897332b42f11f33c8fc693535a6fa" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/1.scene_00/start_text.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b02897332b42f11f33c8fc693535a6fa"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/1.scene_00/start_text.png"></a></p>
+<h4 id="color-lerp">Color LERP</h4>
+<p>Vamos a agregar una animación con un cambio gradual de color al texto para hacerlo más atractivo. Para lograr esto, utilizaremos corutinas. Necesitaremos agregar un GameObject y adjuntarle un nuevo script donde implementaremos la lógica para cambiar el color del texto. Para ello, primero necesitaremos una referencia al texto:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> UnityEngine;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> TMPro;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System.Collections;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TextColorLerp</span> : MonoBehaviour
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [SerializeField]</span> TextMeshProUGUI msg;</span></span></code></pre></div>
+<p>Ahora crearemos un método encargado del cambio de color. Este cambio de color tomará un cierto tiempo, el cual podemos definir mediante un campo serializable:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#a6e22e">    [SerializeField]</span> <span style="color:#66d9ef">float</span> duration;</span></span></code></pre></div>
+<p>Dado que este método se llamará como una corutina, debe devolver un IEnumerator. Las corutinas ejecutan parte del código en cada frame, deteniéndose en los puntos que definimos con <code>yield</code>, y continuando desde ese punto en la próxima iteración. La función LERP nos proporcionará el color correspondiente a un instante dado (que obtendremos con <code>Time.deltaTime</code>):</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> Start()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        StartCoroutine(<span style="color:#e6db74">&#34;ChangeColor&#34;</span>);  
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    IEnumerator ChangeColor()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> t = <span style="color:#ae81ff">0</span>; 
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span>(t &lt; duration)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            t += Time.deltaTime; 
+</span></span><span style="display:flex;"><span>            msg.color = Color.Lerp(Color.black, Color.white, t / duration); 
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">yield</span> <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        StartCoroutine(<span style="color:#e6db74">&#34;ChangeColor&#34;</span>);  
+</span></span><span style="display:flex;"><span>    }</span></span></code></pre></div>
+
+  <footer class="footline"></article>
+<footer>
+   <i class='fas fa-user'></i>  <span itemprop="name"> Autor/a: Sabela Sobrino</span>
+
+<i class='fas fa-calendar'></i> Última actualización: 04.02.2026 
+</footer>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="cambio-de-escena">Cambio de Escena</h1>
+
+<p>Para cambiar de escena, disponemos de un método llamado <code>loadScene</code>, el cual nos permite pasarle el nombre o el índice de la escena que deseamos cargar. Este índice puede encontrarse dentro del menú &ldquo;File&rdquo; -&gt; &ldquo;Build Profiles&rdquo;, donde se muestra una lista de &ldquo;Scene in Build&rdquo; junto con sus respectivos índices:</p>
+<p><a href="#R-image-65a053cdbfddd3720fecbc7996fde309" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/2.cambio_escena/index-scene.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-65a053cdbfddd3720fecbc7996fde309"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/2.cambio_escena/index-scene.png"></a></p>
+<p>Para utilizar este método, creamos un nuevo script llamado StartGame y lo asignamos a un objeto vacío. Invocaremos el método <code>LoadScene</code> pasándole el índice de la escena a la que deseamos ir:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System.Collections;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> System.Collections.Generic;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> UnityEngine;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> UnityEngine.SceneManagement;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">StartGame</span> : MonoBehaviour
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Start is called before the first frame update</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> Start()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Update is called once per frame</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> Update()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(Input.anyKeyDown){
+</span></span><span style="display:flex;"><span>            SceneManager.LoadScene(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h2 id="amimación-cambio-de-escena">Amimación cambio de escena</h2>
+<p>Al presionar cualquier tecla, la barrera se <strong>reducirá progresivamente</strong> en tamaño horizontal hasta desaparecer, avanzando luego a la siguiente escena. En la escena inicial, eliminaremos la barrera y el cambio de escena. Ajustaremos gradualmente la escala (localScale) del componente transform de la barrera mediante interpolación lineal, utilizando la función Lerp de la clase Vector3. No avanzaremos a la siguiente escena hasta que la barrera haya desaparecido y se produzca un sonido inicial.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">StartGame</span> : MonoBehaviour
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [SerializeField]</span> AudioSource sfx; 
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [SerializeField]</span> Transform pala; 
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [SerializeField]</span> GameObject pelota; 
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [SerializeField]</span> <span style="color:#66d9ef">float</span> duration; 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> Update()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(Input.anyKeyDown){
+</span></span><span style="display:flex;"><span>            StartCoroutine(<span style="color:#e6db74">&#34;StartNextLevel&#34;</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    IEnumerator StartNextLevel(){
+</span></span><span style="display:flex;"><span>        Vector3 scaleStart = paddle.localScale; 
+</span></span><span style="display:flex;"><span>        Vector3 scaleEnd = <span style="color:#66d9ef">new</span> Vector3(<span style="color:#ae81ff">0</span>, scaleStart.y, scaleStart.z);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> t = <span style="color:#ae81ff">0</span>; 
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span>(t&lt; duration){
+</span></span><span style="display:flex;"><span>            t += Time.deltaTime; 
+</span></span><span style="display:flex;"><span>            paddle.localScale = Vector3.Lerp(scaleStart, scaleEnd, t/duration);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">yield</span> <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        SceneManager.LoadScene(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Opcionalmente, elimina la pelota y reproduce algún sonido de inicio del juego.</p>
+<h3 id="sonido-inicial">Sonido inicial</h3>
+<p>Reproduciremos un sonido inicial. Dado que siempre será el mismo, podemos asignarlo directamente desde el editor.</p>
+<p><a href="#R-image-fe0cbcbe0d54929230cce1ce8bcd9e9f" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/2.cambio_escena/primer_sound.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fe0cbcbe0d54929230cce1ce8bcd9e9f"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/2.cambio_escena/primer_sound.png"></a></p>
+
+  <footer class="footline"></article>
+<footer>
+   <i class='fas fa-user'></i>  <span itemprop="name"> Autor/a: Sabela Sobrino</span>
+
+<i class='fas fa-calendar'></i> Última actualización: 04.02.2026 
+</footer>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="scene-02">Scene-02</h1>
+
+<p>Para crear un nuevo nivel a partir del primer nivel del juego, diseñaremos una nueva escena (Scene-02):</p>
+<ul>
+<li>Recuerda establecerles un Collider2D adecuado y asignarles un tag para identificar las colisiones.</li>
+<li>Puedes crear nuevos prefabs de ladrillos con diferentes colores y tamaños.</li>
+<li>Puedes crear ladrillos &ldquo;indestructibles&rdquo; o que no se destruyan.</li>
+</ul>
+<p>Para crear la Scene-02, duplicaremos la Scene-01 y la pegaremos:</p>
+<p><a href="#R-image-ba7cfe5b8b41ce3d7a1f9c4f095a43e2" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/3.scene_02/scene02.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ba7cfe5b8b41ce3d7a1f9c4f095a43e2"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/3.scene_02/scene02.png"></a></p>
+<h3 id="ladrillo-indestructible">Ladrillo Indestructible</h3>
+<p>Vamos a crear un ladrillo que no se pueda destruir. En apariencia, será similar a los ladrillos existentes. Para ello, podemos copiar cualquier prefab y cambiarle el nombre, la etiqueta y el color del relleno a gris:</p>
+<p><a href="#R-image-3a1b7c59fe55871ddc0c391243ac7c9e" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/3.scene_02/brick-rock.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3a1b7c59fe55871ddc0c391243ac7c9e"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/3.scene_02/brick-rock.png"></a></p>
+<h3 id="ladrillo-atravesable">Ladrillo Atravesable</h3>
+<p>Crearemos un ladrillo que no se pueda atravesar. En apariencia, será similar a los ladrillos existentes. Para ello, podemos copiar cualquier prefab y cambiarle el nombre, la etiqueta y el color del relleno a rojo. Además, activaremos la opción &ldquo;IsTrigger&rdquo; en su BoxCollider:</p>
+<p><a href="#R-image-732b568fdf82cd8ba9a760d11ed878d0" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/3.scene_02/brick-pass.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-732b568fdf82cd8ba9a760d11ed878d0"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/3.scene_02/brick-pass.png"></a></p>
+<h3 id="diseño-de-la-nueva-escena">Diseño de la Nueva Escena</h3>
+<p>Crearemos una nueva escena con una configuración de ladrillos diferente, utilizando los nuevos ladrillos generados:</p>
+<p><a href="#R-image-16e699d913a00a4d2c6cf0963d31b14e" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/3.scene_02/new_scene02.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-16e699d913a00a4d2c6cf0963d31b14e"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/3.scene_02/new_scene02.png"></a></p>
+<p>Todos los comportamientos asociados a la pelota deben funcionar, ya que hemos copiado la escena. Sin embargo, hay algunas cosas que no funcionarán correctamente relacionadas con los nuevos ladrillos. Para darles comportamiento a los nuevos ladrillos, debemos editar &ldquo;PelotaController&rdquo;:</p>
+<p>Agregaremos un sonido de choque si la pelota colisiona con un ladrillo no atravesable:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> OnCollisionEnter2D(Collision2D other) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Almacenamos la etiqueta del objeto con el que estamos colisionando</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">string</span> tag = other.gameObject.tag;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Verificamos si estamos chocando con una pared</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(tag == <span style="color:#e6db74">&#34;ParedDerecha&#34;</span> || tag == <span style="color:#e6db74">&#34;ParedIzquierda&#34;</span> || tag == <span style="color:#e6db74">&#34;ParedSuperior&#34;</span> || tag == <span style="color:#e6db74">&#34;Brick-rock&#34;</span> ){
+</span></span><span style="display:flex;"><span>        sfx.clip = sfxWall; 
+</span></span><span style="display:flex;"><span>        sfx.Play();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Añadiremos al diccionario los ladrillos rojos que atraviesan y les daremos la misma puntuación que a los ladrillos rojos:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>Dictionary&lt;<span style="color:#66d9ef">string</span>,<span style="color:#66d9ef">int</span>&gt; ladrillos = <span style="color:#66d9ef">new</span> Dictionary&lt;<span style="color:#66d9ef">string</span>, <span style="color:#66d9ef">int</span>&gt;(){
+</span></span><span style="display:flex;"><span>    {<span style="color:#e6db74">&#34;Ladrillo-Amarillo&#34;</span>, <span style="color:#ae81ff">10</span>},
+</span></span><span style="display:flex;"><span>    {<span style="color:#e6db74">&#34;Ladrillo-Verde&#34;</span>, <span style="color:#ae81ff">15</span>},
+</span></span><span style="display:flex;"><span>    {<span style="color:#e6db74">&#34;Ladrillo-Naranja&#34;</span>, <span style="color:#ae81ff">20</span>},
+</span></span><span style="display:flex;"><span>    {<span style="color:#e6db74">&#34;Ladrillo-Rojo&#34;</span>, <span style="color:#ae81ff">25</span>},
+</span></span><span style="display:flex;"><span>    {<span style="color:#e6db74">&#34;Ladrillo-Atravesable&#34;</span>, <span style="color:#ae81ff">25</span>},
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></div>
+<p>Crearemos una función para destruir ladrillos:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">void</span> DestroyBrick(GameObject obj){
+</span></span><span style="display:flex;"><span>    sfx.clip = sfxBrick; 
+</span></span><span style="display:flex;"><span>    sfx.Play();
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Actualizamos la puntuación </span>
+</span></span><span style="display:flex;"><span>    gameManager.UpdateScore(ladrillos[obj.tag]);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Se destruye el objeto</span>
+</span></span><span style="display:flex;"><span>    Destroy(obj);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Luego, llamaremos a esta función dende OnCollisionEnter2D:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> OnCollisionEnter2D(Collision2D other) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Verificamos si la etiqueta es un ladrillo que no sea el ladrillo atravesable</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(ladrillos.ContainsKey(tag) &amp;&amp; tag != <span style="color:#e6db74">&#34;Ladrillo-Atravesable&#34;</span>){
+</span></span><span style="display:flex;"><span>        DestroyBrick(other.gameObject);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Para los ladrillos atravesables, se utiliza la función OnTriggerEnter2D, que permite que la pelota pase a través de ellos sin rebotar. PAra garantizar que el ladrillo puntúe solo una vez, se desactiva su componente físico, el collider (other.enable = false). De esta manera, el ladrillo permanece visible pero deja de interactuar con la pelota, evitando que el jugador sume puntos.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> OnTriggerEnter2D(Collider2D other) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Si atravesamos un ladrillo rojo atravesable </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(other.tag==<span style="color:#e6db74">&#34;Ladrillo-Atravesable&#34;</span>){
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Sumamos puntos</span>
+</span></span><span style="display:flex;"><span>        gameManager.UpdateScore(ladrillos[other.tag]);
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Sonido del ladrillo</span>
+</span></span><span style="display:flex;"><span>        sfx.clip = sfxBrick;
+</span></span><span style="display:flex;"><span>        sfx.Play();
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Se desactiva el collider para que la pelota no detecte el &#34;Trigger&#34; y no sumar puntos</span>
+</span></span><span style="display:flex;"><span>        other.enabled = <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+
+  <footer class="footline"></article>
+<footer>
+   <i class='fas fa-user'></i>  <span itemprop="name"> Autor/a: Sabela Sobrino</span>
+
+<i class='fas fa-calendar'></i> Última actualización: 04.02.2026 
+</footer>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="propagar-datos">Propagar Datos</h1>
+
+<p>Entre los diferentes niveles, necesitamos transferir información como el número de vidas, contador, etc. Actualmente, estas escenas son <strong>independientes</strong> y todos los objetos de la escena anterior se destruyen, por lo que no conservamos información anterior. Existen múltiples maneras de pasar información entre diferentes escenas.</p>
+<p>Para lograr esto, primero eliminaremos el GameManager en la &ldquo;Scene-02&rdquo;, ya que este es responsable de llevar el control de vidas y puntos, y establece la puntuación y el número de vidas en 0 al iniciarse la escena.</p>
+<p><a href="#R-image-787776399168e57947ab2b636ca46c14" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/4.propagar_datos/jerarquia2.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-787776399168e57947ab2b636ca46c14"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/4.propagar_datos/jerarquia2.png"></a></p>
+<p>Para pasar la información a la Scene-02, debemos volver a la Scene-01 y en el GameManager, definiremos los atributos que deseamos transferir a la Scene-02 como atributos estáticos:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GameManager</span> : MonoBehaviour
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">int</span> Score { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">set</span>; } = <span style="color:#ae81ff">0</span>; 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">int</span> Lives { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">set</span>; } = <span style="color:#ae81ff">3</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> UpdateScore(<span style="color:#66d9ef">int</span> points) { Score += points; }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> UpdateLives() { Lives--; }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Al hacer estos atributos estáticos, son atributos de clase compartidos por todos los objetos. Los hacemos públicos para poder verlos en Unity, pero solo queremos que sean públicos para lectura, no para escritura.</p>
+<p>De esta forma, podemos acceder a ellos a través de la clase sin necesidad de instanciarla. Por lo tanto, en el script de Pelota podemos eliminar la instancia de la clase:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#75715e">//[SerializeField] GameManager gameManager; </span></span></span></code></pre></div>
+<p>Y modificaremos las llamadas a los métodos de actualización de puntos y vidas:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>GameManager.UpdateScore(ladrillos[obj.tag]);
+</span></span><span style="display:flex;"><span>GameManager.UpdateLives();</span></span></code></pre></div>
+<p>Del <code>GameManager</code>, vamos a eliminar la gestión de los componentes de texto y trasladarla a un nuevo script que se encargará de toda la parte de visualización de texto, y que llamaremos GUIController.</p>
+<p>En este nuevo script, trasladaremos toda la gestión del texto que actualmente está en el GameManager. Para poder hacer referencia a las variables de vidas y puntuación, se accede al GameManager:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> UnityEngine;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> TMPro;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GUIController</span> : MonoBehaviour
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [SerializeField]</span> TextMeshProUGUI txtScore;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [SerializeField]</span> TextMeshProUGUI txtlives; 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> OnGUI() {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Actualizar el texto </span>
+</span></span><span style="display:flex;"><span>    txtScore.text = <span style="color:#66d9ef">string</span>.Format(<span style="color:#e6db74">&#34;{0,3:D3}&#34;</span>, GameManager.score); <span style="color:#75715e">// Queremos formatearlo a 3 dígitos </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Primer cero, el índice de los valores de la lista que se va a introducir, cuántos caracteres vamos a querer y el formato va a ser dígitos a 3. </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Actualizamos marcador</span>
+</span></span><span style="display:flex;"><span>    txtLives.text = GameManager.Lives.ToString();
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Comprobaremos que en la primera escena todo funciona correctamente. Ahora, en la <strong>Scene-02</strong>, no tenemos el GameManager para gestionar la actualización de las vidas, por lo que tendremos que actualizar esa visualización de las puntuaciones y vidas. Para ello, crearemos otro objeto llamado GUIController al que asignaremos ese script. Este script se encargará de actualizar la puntuación basándose en la clase estática.</p>
+<p>Al ejecutar la Scene-02, veremos que los marcadores se actualizan correctamente. Ahora, lo que nos falta es propagar los datos desde el nivel anterior. Para ello, primero nos aseguraremos de que las tres escenas estén añadidas a BuildSettings y actualizaremos los IDs para que sean los correctos:</p>
+<p><a href="#R-image-c9dda2b95dd3a4d4991b848ef18b0fd3" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/4.propagar_datos/Scenes.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c9dda2b95dd3a4d4991b848ef18b0fd3"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/4.propagar_datos/Scenes.png"></a></p>
+<p>Ahora, generaremos una nueva variable estática para almacenar la cantidad de ladrillos destructibles en nuestra escena:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GameManager</span> : MonoBehaviour
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Se asocia el número de ladrillos destructibles al ID de la escena (Scene-0: 0 ladrillos, Scene-1: 32)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">int</span>[] totalBricks = <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span>[] {<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">32</span>, <span style="color:#ae81ff">32</span>};
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>En el controlador de la Pelota, podemos crear una variable que aumentará cada vez que golpeemos un ladrillo:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">PelotaController</span> : MonoBehaviour
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Acumulamos los ladrillos que destruimos </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> brickCount;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>En el método para destruir ladrillos, actualizamos este valor y comprobamos si excedemos el número de ladrillos:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> DestroyBrick(GameObject obj){
+</span></span><span style="display:flex;"><span>    sfx.clip = sfxBrick; 
+</span></span><span style="display:flex;"><span>    sfx.Play();
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Actualizamos la puntuación </span>
+</span></span><span style="display:flex;"><span>    GameManager.UpdateScore(ladrillos[obj.tag]);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Se destruye el objeto</span>
+</span></span><span style="display:flex;"><span>    Destroy(obj);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Actualizamos el contador de ladrillos destruidos</span>
+</span></span><span style="display:flex;"><span>    ++brickCount;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Comprobamos si hemos alcanzado el máximo de ladrillos. Necesitamos el índice de la escena en la que nos encontramos para saber cuántos ladrillos tenemos.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(brickCount == GameManager.totalBricks[SceneManager.GetActiveScene().buildIndex]){
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Aquí añadiremos el código para avanzar al siguiente nivel</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Para conocer el número de ladrillos, necesitamos el ID de la escena. Para ello, declaramos una variable y la inicializamos en el método <code>Start</code>:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> UnityEngine.SceneManagement;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">PelotaController</span> : MonoBehaviour
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ID de la escena </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> sceneId; 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> Start()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        sceneId = SceneManager.GetActiveScene().buildIndex;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Resto del código...</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Ahora podemos invocar la carga de la siguiente escena cuando se destruyan todos los ladrillos:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>++brickCount;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Comprobamos si hemos alcanzado el máximo de ladrillos. Necesitamos el índice de la escena en la que nos encontramos para saber cuántos ladrillos tenemos. </span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span>(brickCount == GameManager.totalBricks[sceneId]){
+</span></span><span style="display:flex;"><span>    SceneManager.LoadScene(sceneId + <span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>De esta manera, al quitar todos los ladrillos, avanzaremos a la siguiente escena.</p>
+<h2 id="espera">Espera</h2>
+<p>Como mejora, podemos agregar un retraso antes de cargar la siguiente escena. Para ello, modificaremos el método <code>DestroyBrick</code> de la siguiente manera:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> DestroyBrick(GameObject obj){
+</span></span><span style="display:flex;"><span>    sfx.clip = sfxBrick; 
+</span></span><span style="display:flex;"><span>    sfx.Play();
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Actualizamos la puntuación </span>
+</span></span><span style="display:flex;"><span>    GameManager.UpdateScore(ladrillos[obj.tag]);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Se destruye el objeto</span>
+</span></span><span style="display:flex;"><span>    Destroy(obj);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Actualizamos el contador de ladrillos destruidos</span>
+</span></span><span style="display:flex;"><span>    ++brickCount;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Comprobamos si hemos alcanzado el máximo de ladrillos. Necesitamos el índice de la escena en la que nos encontramos para saber cuántos ladrillos tenemos. </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(brickCount == GameManager.totalBricks[sceneId]){
+</span></span><span style="display:flex;"><span>        Invoke(<span style="color:#e6db74">&#34;NextScene&#34;</span>, <span style="color:#ae81ff">3</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> NextScene(){
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> nextId = sceneId + <span style="color:#ae81ff">1</span>; 
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(nextId == SceneManager.sceneCountInBuildSettings){
+</span></span><span style="display:flex;"><span>        nextId = <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    SceneManager.LoadScene(nextId);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>En este código, hemos añadido un retraso de 3 segundos antes de llamar al método <code>NextScene</code>, que carga la siguiente escena. Además, hemos agregado una condición para que, si estamos en la última escena, la próxima escena sea la primera, completando así un ciclo.</p>
+<h2 id="sonido">Sonido</h2>
+<p>Podemos agregar un nuevo sonido antes de pasar a la siguiente escena y detener el movimiento de la pelota. Modificaremos el método <code>DestroyBrick</code> para incluir estas nuevas funcionalidades:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> DestroyBrick(GameObject obj){
+</span></span><span style="display:flex;"><span>    ... 
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Comprobamos si hemos alcanzado el máximo de ladrillos. Necesitamos el índice de la escena en la que nos encontramos para saber cuántos ladrillos tenemos. </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(brickCount == GameManager.totalBricks[sceneId]){
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Reproducimos el sonido de transición</span>
+</span></span><span style="display:flex;"><span>        sfx.clip = sfxNextLevel;
+</span></span><span style="display:flex;"><span>        sfx.Play();
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Detenemos el movimiento de la pelota</span>
+</span></span><span style="display:flex;"><span>        rb.linearVelocity = Vector2.zero;
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Invocamos el método para pasar a la siguiente escena después de 3 segundos</span>
+</span></span><span style="display:flex;"><span>        Invoke(<span style="color:#e6db74">&#34;NextScene&#34;</span>, <span style="color:#ae81ff">3</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Con estos cambios, al destruir todos los ladrillos en la escena, se reproducirá un nuevo sonido antes de pasar a la siguiente escena, y la pelota dejará de moverse para evitar ejecutarse antes de pasar a la siguiente escena.</p>
+
+  <footer class="footline"></article>
+<footer>
+   <i class='fas fa-user'></i>  <span itemprop="name"> Autor/a: Sabela Sobrino</span>
+
+<i class='fas fa-calendar'></i> Última actualización: 04.02.2026 
+</footer>
+  </footer>
+</article>
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="game-over">Game Over</h1>
+
+<p>Por último, se añade un nuevo componente de texto (TextMeshPro) en las escenas 01 y 02 que se mostrará al finalizar el juego. Por defecto, este componente estará deshabilitado.</p>
+<p><a href="#R-image-7b4b4fa8f13f685d0e7353c6fcd4e63c" class="lightbox-link"><img alt="Nuevo Proyecto" class="lazy lightbox figure-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/5.game_over/gameover.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7b4b4fa8f13f685d0e7353c6fcd4e63c"><img alt="Nuevo Proyecto" class="lazy lightbox lightbox-image" loading="lazy" src="../../ud10/2.breakout/17.scenes/5.game_over/gameover.png"></a></p>
+<p>Se añade un GameObject vacío en ambas escenas y se les asocia un nuevo script con el nombre GameOverController.</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> UnityEngine;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> UnityEngine.SceneManagement;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> TMPro;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GameOverController</span> : MonoBehaviour
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">    [SerializeField]</span> TextMeshProUGUI GameOver;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//Variable que indica si el juego ya ha rematado</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">bool</span> gameOver = <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">void</span> Update()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//En la función se comprueba que no estamos en game over y si las vidas han llegado ya 0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (!gameOver &amp;&amp; GameManager.Lives &lt;= <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">//Si se cumple se activa el texto &#34;Game Over&#34;</span>
+</span></span><span style="display:flex;"><span>            GameOver.gameObject.SetActive(<span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>            gameOver = <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Si el juego ya ha terminado y el usuario presiona cualquier tecla se reinicia el juego</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (gameOver &amp;&amp; Input.anyKeyDown)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            GameManager.ResetGame();
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>En el script GameManager se añade la función ResetGame, que restablece la puntuación y las vidas a los valores iniciales y regresa a la escena inicial:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> ResetGame()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    Score = <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    Lives = <span style="color:#ae81ff">3</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    SceneManager.LoadScene(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Además, se debe detener la pelota cuando ya no quedan vidas, para evitar que el juego continúe. Para eso modificamos el script PelotaController:</p>
+<div class="highlight wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> OnTriggerEnter2D(Collider2D other) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//Se comprueba si el objecto que se está atravesando es la pared inferior</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(other.tag == <span style="color:#e6db74">&#34;ParedInferior&#34;</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Se actualiza el contador de vidas</span>
+</span></span><span style="display:flex;"><span>        GameManager.Updatelives();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Si ya no quedan vidas</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (GameManager.Lives &lt;= <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Se detiene el movimiento de la pelota</span>
+</span></span><span style="display:flex;"><span>        rb.linearVelocity = Vector2.zero;
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Se desactiva la pelota</span>
+</span></span><span style="display:flex;"><span>        gameObject.SetActive(<span style="color:#66d9ef">false</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Se sale del método para que no se relance</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Si aún quedan vidas se vuelve a lanzar la pelota</span>
+</span></span><span style="display:flex;"><span>        Invoke(<span style="color:#e6db74">&#34;LanzarPelota&#34;</span>, delay);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//...</span></span></span></code></pre></div>
+
+<details open class=" box cstyle notices primary">
+  <summary class="box-label" tabindex="-1">
+    Mejoras
+  </summary>
+  <div class="box-content">
+<p>Crear una escena final con los créditos.</p>
+<p>Que se inicie el juego cuando se pulse la barra espaciadora.</p>
+<p>Que se salga del juego al pulsar escape.</p>
+<p>Desactivar el cursor al iniciar el juego.</p>
+<p>Crear el ejecutable para entregar.</p>
+  </div>
+</details>
+
+  <footer class="footline"></article>
+<footer>
+   <i class='fas fa-user'></i>  <span itemprop="name"> Autor/a: Laura Pérez Orosa</span>
+
+<i class='fas fa-calendar'></i> Última actualización: 04.02.2026 
+</footer>
+  </footer>
+</article>
+          </section>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="../../js/clipboard/clipboard.min.js?1770207589" defer></script>
+    <script src="../../js/perfect-scrollbar/perfect-scrollbar.min.js?1770207589" defer></script>
+    <script src="../../js/theme.min.js?1770207589" defer></script>
+  </body>
+</html>
+

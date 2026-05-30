@@ -1,2 +1,14 @@
 fileFormatVersion: 2
 guid: e06e540c3bf3780138b988e1c44d63c1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - sfx: {fileID: 8300000, guid: fe6915705538af713ae810760c9446e8, type: 3}
+  - pala: {instanceID: 0}
+  - pelota: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

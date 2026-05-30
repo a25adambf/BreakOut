@@ -12,7 +12,7 @@ public class StartGame : MonoBehaviour
 
     void Update()
     {
-        if(Input.anyKeyDown){
+        if(Input.GetKeyDown(KeyCode.Space)){
             StartCoroutine("StartNextLevel");
         }
     }
@@ -33,6 +33,6 @@ public class StartGame : MonoBehaviour
             pala.localScale = Vector3.Lerp(scaleStart, scaleEnd, t/duration);
             yield return null;
         }
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }
